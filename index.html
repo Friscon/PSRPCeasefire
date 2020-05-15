@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+	<head>
+		<title><b><u>Covid Ceasefire 2020</u></b></head></br></br></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			#map {
+				height: 500px;
+				width: 100%;
+
+			}
+		</style>
+	</head>
+	<body>
+		View Timeline</br>
+		View on Map</br></br>
+
+		<div id="map">
+		</div>
+		<script>
+
+			function initMap() {
+				var location = {lat: -25.363, lng: 131.044};
+				var map = new google.maps.Map(document.getElementById("map"), {
+					zoom: 4,
+					center: location
+				});
+			}
+		</script>
+
+		Search by Agreement</br></br>
+		<input type="label" value="Country/Entity"/></br>
+		<table>
+			<tr>
+				<td>Country</td>
+				<td>Date of Agreement</td>
+				<td>Party</td>
+				<td>XYZ</td>
+				<td>Download</td>
+			</tr>
+			<tr>
+				<td>India</td>
+				<td>20-Apr-2019</td>
+				<td>Party 1</td>
+				<td>XYZ 1</td>
+				<td>Download</td>
+			</tr>
+			<tr>
+				<td>UK</td>
+				<td>6-June-2019</td>
+				<td>Party 2</td>
+				<td>XYZ 2</td>
+				<td>Download</td>
+			</tr>
+			<tr>
+				<td>Germany</td>
+				<td>10-May-2019</td>
+				<td>Party 3</td>
+				<td>XYZ 3</td>
+				<td>Download</td>
+			</tr>
+		</table>
+	</body>
+</html>
