@@ -41,8 +41,8 @@ function getCeasefireData() {
                     console.log("latitude, longitude : "+country.latitude+","+country.longitude);
 
                     var popup = new mapboxgl.Popup()
-                    .setHTML(`<h3> Cameroon </h3>` 
-                    +  '<h4>' + '<b>'+ 'Location: ' + '</b>'+country.name+'</h4>' 
+                    .setHTML('<h3> '+country.name+' </h3>' 
+                    +  '<h4>' + '<b>'+ 'Region: ' + '</b>'+result.region_entity+'</h4>' 
                     + '<h4>' + '<b>'+ 'Type: ' + '</b> '+result.declaration_type+' </h4>' );      
                    
                     var marker = new mapboxgl.Marker({color: 'green'})
